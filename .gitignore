@@ -1,0 +1,7 @@
+/.idea
+/PRE_README.txt
+/__pycache__
+/.venv
+/build
+/dist
+/*.spec
