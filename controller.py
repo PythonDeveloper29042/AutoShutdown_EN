@@ -29,11 +29,11 @@ def shutdown_model(time: datetime, **countdown_data):
         return
     current_time = datetime.now()  # Get the current time
     if 's' in time:  # Check if the time contains 's' ('seconds')
-        future_time = timedelta(seconds=int(time[:-1]))  # Get the future time in seconds
+        future_time = timedelta(seconds=int(time[:-2]))  # Get the future time in seconds
     if 'min' in time:  # Check if the time contains 'min' ('minutes')
-        future_time = timedelta(minutes=int(time[:-2]))  # Get the future time in minutes
+        future_time = timedelta(minutes=int(time[:-3]))  # Get the future time in minutes
     if 'hr' in time:  # Check if the time contains 'hr' ('hours')
-        future_time = timedelta(hours=int(time[:-2]))  # Get the future time in hours
+        future_time = timedelta(hours=int(time[:-3]))  # Get the future time in hours
     current_time += future_time  # Add the future time to the current time        
     running = True  # Set the running state to True
     count_secs = future_time.total_seconds()  # Get the total number of seconds

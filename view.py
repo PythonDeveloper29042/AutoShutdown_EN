@@ -41,12 +41,12 @@ def add_components_to_main_window():
     for child in root.winfo_children():
         child.destroy()  # Destroy all the child widgets in the main window
     # The label that displays the title of the application
-    title = Label(root, text='AutoShutdown', font=('Segoe UI', 18, 'bold'))
+    title = Label(root, text='AutoShutdown', font=('Microsoft Sans Serif', 18, 'bold'))
     title.pack(pady=20)
 
     # The label that displays the description of the operation
     # label = Label(root, text='Choose the time at which the system should be shut down:')
-    label = Label(root, text='Choose the time at which the system should be shut down:')
+    label = Label(root, text='Choose the time at which the system should be shut down:', font=('Microsoft Sans Serif', 8, 'normal'))
     label.pack()
 
     # # button = Button(root, text='Set')
@@ -54,19 +54,19 @@ def add_components_to_main_window():
     # button.pack()
 
     # Add another label that displays 'Shutdown after:'
-    shutdown_after_label = Label(root, text='Shutdown after:')
+    shutdown_after_label = Label(root, text='Shutdown after:', font=('Microsoft Sans Serif', 8, 'normal'))
     shutdown_after_label.pack()
 
     # Add example time
-    model_time = ttk.Combobox(root, values=['5 min', '10 min', '20 min', '30 min', '1 hr', '2 hr', '3 hr'])
+    model_time = ttk.Combobox(root, values=['5 min', '10 min', '20 min', '30 min', '1 hr', '2 hr', '3 hr'], font=('Microsoft Sans Serif', 8, 'normal'))
     model_time.pack(pady=10)
 
     # Add another button to set the time
-    set_button = Button(root, text='Set', command=confirm_shutdown)
+    set_button = Button(root, text='Set', font=('Microsoft Sans Serif', 8, 'normal'), command=confirm_shutdown)
     set_button.pack()
 
     # Add another button to customize the time
-    custom_button = Button(root, text='Custom time', command=add_components_to_customize_window)
+    custom_button = Button(root, text='Custom time', font=('Microsoft Sans Serif', 8, 'normal'), command=add_components_to_customize_window)
     custom_button.pack(pady=20)
 
 
@@ -86,23 +86,23 @@ def add_components_to_customize_window():
     customize_window.resizable(False, False)  # Disable resizing of the new window
 
     # Add the prompt to the new window
-    prompt = Label(customize_window, text='Choose the time at which the system should be shut down:')
+    prompt = Label(customize_window, text='Choose the time at which the system should be shut down:', font=('Microsoft Sans Serif', 8, 'normal'))
     prompt.pack()
 
     # Add the calendar to choose the date
-    calendar = Calendar(customize_window, font=('Segoe UI', 8, 'normal'))
+    calendar = Calendar(customize_window, font=('Microsoft Sans Serif', 8, 'normal'))
     calendar.pack(pady=10)
 
     # Add the comboboxes to choose the time
-    hours = ttk.Combobox(customize_window, values=[str(i).zfill(2)  for i in range(24)])
+    hours = ttk.Combobox(customize_window, values=[str(i).zfill(2)  for i in range(24)], font=('Microsoft Sans Serif', 8, 'normal'))
     hours.pack(pady=2)
-    minutes = ttk.Combobox(customize_window, values=[str(i).zfill(2)  for i in range(60)])
+    minutes = ttk.Combobox(customize_window, values=[str(i).zfill(2)  for i in range(60)], font=('Microsoft Sans Serif', 8, 'normal'))
     minutes.pack(pady=2)
     # seconds = ttk.Combobox(customize_window, values=[str(i).zfill(2) + '秒' for i in range(60)], font=('SimSun', 10, 'normal'))
     # seconds.pack(pady=2)
 
     # Add the button to set the time
-    set_button = Button(customize_window, text='Set', command=confirm_shutdown_custom)
+    set_button = Button(customize_window, text='Set', font=('Microsoft Sans Serif', 8, 'normal'), command=confirm_shutdown_custom)
     set_button.pack(pady=2)
 
 
@@ -125,19 +125,19 @@ def add_components_to_countdown_window():
     root.resizable(False, False)  # Disable resizing of the countdown window
 
     # Add a label to display the countdown message
-    countdown_label = Label(root, textvariable=end_time)
+    countdown_label = Label(root, textvariable=end_time, font=('Microsoft Sans Serif', 8, 'normal'))
     countdown_label.pack(pady=10)
 
     # Add a label to display "Remaining time:"
-    remaining_time_text = Label(root, text='Remaining time:')
+    remaining_time_text = Label(root, text='Remaining time:', font=('Microsoft Sans Serif', 8, 'normal'))
     remaining_time_text.pack(pady=10)
 
     # Add a label to display the remaining time (this will be updated dynamically)
-    remaining_time_label = Label(root, textvariable=count_time, font=('Segoe UI', 40, 'bold'))
+    remaining_time_label = Label(root, textvariable=count_time, font=('Microsoft Sans Serif', 40, 'bold'))
     remaining_time_label.pack(pady=20)
 
     # Add a button to cancel the shutdown
-    cancel_button = Button(root, text='Cancel shutdown', command=cancel_shutdown)
+    cancel_button = Button(root, text='Cancel shutdown', font=('Microsoft Sans Serif', 8, 'normal'), command=cancel_shutdown)
     cancel_button.pack(pady=20)
 
 
