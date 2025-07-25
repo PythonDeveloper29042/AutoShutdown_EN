@@ -200,7 +200,7 @@ If you click **Custom time**, the program will have a new window, you can select
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Inquiries
-If you have any questions, feel free to open an issue or contact me at [here](mailto:pythondeveloper.29042@outlook.com).
+If you have any questions, feel free to open an issue or contact me at [here](mailto:pythondeveloper.29042@outlook.com). Tel: +86 157-9657-9703
 
 ## Conclusion
 Thanks for using this program! I hope you find it useful. If you have any suggestions or feedback, feel free to let me know.
@@ -381,7 +381,7 @@ mv ./dist/main ./dist/AutoShutdown
 此项目根据MIT许可证获得许可。有关详细信息，请参阅[LICENSE](LICENSE.txt)文件。
 
 ## 询问
-如果你有任何疑问，你可以打开一个issue或者在[这里](mailto:pythondeveloper.29042@outlook.com)联系我。
+如果你有任何疑问，你可以打开一个issue或者在[这里](mailto:pythondeveloper.29042@outlook.com)联系我。电话：+86 157-9657-9703
 
 ## 结语
 感谢您使用此程序！我希望您觉得它有用。如果您有任何建议或反馈，请随时告诉我。
