@@ -90,7 +90,7 @@ def cancel_shutdown():
     '''
     global running  # Get the global variable running
     running = False  # Set the running state to False
-    messagebox.showinfo('Cancellation', 'The shutdown has been cancelled!')  # Show a message box to inform the user that the shutdown has been cancelled
+    messagebox.showinfo('Info', 'Operation was cancelled by the user')  # Show a message box to inform the user that the shutdown has been cancelled
 
 
 
